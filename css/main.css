@@ -210,10 +210,12 @@ iframe{
 
 .formulario{
     width: auto;
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 legend{
+    margin-bottom: 30px;
     padding: 5px;
     color: rgb(88, 115, 238);
     font-size: 20px;
@@ -225,9 +227,12 @@ label{
     color: rgb(88, 115, 238);
     font-size: 15px;
     margin-left: 50px;
-    padding-right: 10px;
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.completar{
+    width: 200px;
 }
 
 .pais{
@@ -252,6 +257,8 @@ div p{
 }
 
 textarea{
+    width: 250px;
+    height: 150px;
     text-align: start;
     margin-left: 50px;
     padding-left: 15px;
@@ -291,6 +298,10 @@ footer p{
 
 /* para tablet */
 @media screen and (max-width: 992px) {
+    .nombreSitio{
+        margin-right: 0px;
+    }
+
     .nombreSitio a{
         font-size: 50px;
     }
@@ -376,9 +387,11 @@ footer p{
 
 /* para mobile */
 @media screen and (max-width: 768px) {
+
+
     .nombreSitio a{
         font-size: 50px;
-        }
+    }
 
     .menu{
         display: flex;

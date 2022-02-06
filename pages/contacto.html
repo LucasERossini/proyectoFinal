@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=ç, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Nombre de la página -->
+    <title>Nosotros - Concesionarios</title>
+</head>
+<body>
+    <!-- Header comienza -->
+    <header>
+        <div class="nombreSitio"> 
+            <a href="../index.html"> Concesionarios</a> 
+        </div>
+        <!-- Barra de navegación comienza -->
+        <nav class="navegacion">
+            <ul class="menu">
+                <li>
+                    <a href="../index.html"> Home </a>
+                </li>
+                <li>
+                    <a href="./nosotros.html"> Nosotros </a>
+                </li>
+                <li>
+                    <a href="./modelos.html"> Modelos </a>
+                    <ul class="subMenu">
+                        <li><a href="./modelos.html">Chevrolet</a></li>
+                        <li><a href="./modelos.html">Citröen</a></li>
+                        <li><a href="./modelos.html">Ford</a></li>
+                        <li><a href="./modelos.html">Peugeot</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./sucursales.html"> Sucursales </a>
+                </li>
+                <li>
+                    <a href="./contacto.html"> Contacto </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Barra de navegación termina -->
+    </header>
+     <!-- Header termina -->
+
+
+    <!-- Main comienza -->
+    <main>
+        <!-- Sección Contacto comienza -->
+        <h1 class="titulo"> Contacto </h1>
+        <section class="formulario">
+            <!-- Formulario comienza -->
+            <form>
+                <fieldset>
+                    <legend> Completa con tus datos para estar en contacto y recibir inormación </legend>
+                    <div>
+                        <label for="nombre"> Nombre y Apellido </label>
+                        <input type="text" required name="nombre" placeholder="Completa con tu nombre y apellido">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email"> Dirección de E-mail </label>
+                        <input type="email" required placeholder="Completa con tu dirección de email">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="pais"> Selecciona tu País </label>
+                        <select class="pais" name="pais" required>
+                            <option value="">Elije un país</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="chile">Chile</option>
+                            <option value="uruguay">Uruguay</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="genero"> Género </label>
+                        <input type="radio" name="genero" value="hombre"> 
+                        <p>Hombre</p> 
+                        <input type="radio" name="genero" value="mujer"> <p>Mujer</p> 
+                        <input type="radio" name="genero" value="no binario"> <p>No binario</p> 
+                    </div>
+                    <br>
+                    <div>
+                        <textarea placeholder="Escriba su mensaje..." name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    <br>
+                    <div class="final">
+                        <input class="botones" type="submit" value="Enviar">
+                        <input class="botones" type="reset" value="Borrar todos los campos"> 
+                    </div>
+                </fieldset>
+            </form>
+            <!-- Formulario termina -->
+        </section>
+        <!-- Sección contacto termina -->
+    </main>
+    <!-- Main termina -->
+
+    <!-- Footer comienza -->
+    <footer>
+        <p> Todos los derechos reservados </p>
+    </footer>
+    <!-- Footer termina -->
+</body>
+</html>

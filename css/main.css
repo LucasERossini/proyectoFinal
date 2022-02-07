@@ -417,7 +417,7 @@ footer p{
     }
 
     .nombreSitio a{
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .navbar-toggler{
@@ -438,12 +438,12 @@ footer p{
     }
 
     .menu > li > a{
-        font-size: 7px;
+        font-size: 10px;
         text-align: center;
     }
 
     .subMenu li a{
-        font-size: 7px;  
+        font-size: 10px;  
     }
 
     /* estilos del main */

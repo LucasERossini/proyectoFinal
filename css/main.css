@@ -1,7 +1,11 @@
+/* reset */
+
 *{
     padding: 0px;
     margin: 0px;
 }
+
+/* color de fondo del body */
 
 body{
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, #012d81 30%, rgba(2,0,36,1) 100%);
@@ -16,10 +20,7 @@ body{
 }
 
 /* estilos del header */
-header{    
-    /*display: flex;
-    justify-content: space-between;
-    align-items: center;*/
+header{
     grid-area: header;
     position: fixed;
     display: flex;
@@ -30,7 +31,6 @@ header{
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, #012d81 100%);
 }
 
-/* estilos del nav */
 .navbar-custom{
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, #012d81 100%);
 }
@@ -190,6 +190,10 @@ h2{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.presentacion{
+    margin-top: 150px;
+}
+
 iframe{
     display: block;
     margin: 0px auto;
@@ -318,6 +322,7 @@ footer p{
 
 /* para tablet */
 @media screen and (max-width: 992px) {
+    /* estilos del header */
     .nombreSitio{
         margin-right: 0px;
     }
@@ -351,6 +356,7 @@ footer p{
         font-size: 12px;  
     }
 
+    /* estilos del main */
     main{
         padding-top: 120px;
     }
@@ -396,6 +402,7 @@ footer p{
         font-size: 10px;
         }
 
+    /* estilos de footer */
     footer{
         margin-top: 80px;
     }
@@ -403,8 +410,26 @@ footer p{
 
 /* para mobile */
 @media screen and (max-width: 768px) {
+    /* estilos del header */
+    .nombreSitio{
+        margin-left: 0;
+        padding-bottom: 10px;
+    }
+
     .nombreSitio a{
-        font-size: 50px;
+        font-size: 30px;
+    }
+
+    .navbar-toggler{
+        margin-bottom: 0px;
+    }
+
+    .navbar-toggler{
+        transform: scale(0.8);
+    }
+
+    .navbar-toggler-icon{
+        transform: scale(0.8);
     }
 
     .menu{
@@ -412,16 +437,77 @@ footer p{
         flex-direction: column;
     }
 
+    .menu > li > a{
+        font-size: 7px;
+        text-align: center;
+    }
+
+    .subMenu li a{
+        font-size: 7px;  
+    }
+
+    /* estilos del main */
     main{
-        padding-top: 120px;
+        padding-top: 80px;
+    }
+
+    .titulo{
+        font-size: 25px;
     }
 
     main a{
-        font-size: 20px;
+        font-size: 12px;
         padding-top: 30px;
+    }
+
+    main img{
+        display: block;
+        margin: 20px auto;
+        width: 200px;
+        height: 120px;
+    }
+
+    h2{
+        font-size: 20px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+
+    .presentacion{
+        margin-top: 100px;
+    }
+
+    iframe{
+        width: 250px;
+        height: 150px;
+    }
+
+    .final{
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .redes img{
+        width: 30px;
+        height: 30px;
     }
 
     .direccion{
         font-size: 15px;
     }
+
+    label{
+        margin-left: 10px;
+    }
+
+    .completar{
+        width: 150px;
+    }
+    
+    textarea{
+        width: 230px;
+        height: 150px;
+        text-align: start;
+        margin-left: 10px;
+        padding-left: 15px;
+    }    
 }

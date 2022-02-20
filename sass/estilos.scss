@@ -1,31 +1,16 @@
-// Variables //
-$color-body: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(1, 45, 129) 30%, rgba(2,0,36,1) 100%);
-$color-fondo: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(1, 45, 129) 100%);
-$color-texto: rgb(112, 148, 231);
-
 // Imports //
-@import"header";
-@import"main";
-@import"footer";
+@import "base/reset";
 
+@import "utilities/variables";
 
-/* reset */
+@import "layout/body";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
 
-*{
-    padding: 0px;
-    margin: 0px;
-}
+@import "views/home";
+@import "views/nosotros";
+@import "views/sucursales";
+@import "views/contacto";
 
-/* estilos del body */
-
-body{
-    background: $color-body;
-}
-
-/* grid layout */
-.contenedor{
-    display: grid;
-    grid-template-areas: "header"
-                         "main"
-                         "footer";
-}
+@import "components/mediaqueries";

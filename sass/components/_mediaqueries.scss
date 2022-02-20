@@ -1,0 +1,216 @@
+/* media queries */
+
+/* para tablet */
+@media screen and (max-width: 992px){
+    header{
+        .nombreSitio{
+            margin-right: 0px;
+
+            a{
+                font-size: 50px;
+            }
+        }
+
+        .navbar-custom{
+            .elementos{
+                .collapse.navbar-collapse{
+                    .menu{
+                        display: flex;
+                        flex-direction: column;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+
+                        >li{
+                            >a{
+                                font-size: 10px;
+                                text-align: center;
+                                padding: 5px;
+                                margin: 5px;
+                            }
+                        }
+
+                        li{
+                            .subMenu{
+                                position: relative;
+                                display: flex;
+                                flex-direction: column;
+                            }
+                        
+                            li{
+                                a{
+                                    font-size: 12px;  
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        padding-top: 120px;
+
+        img{
+            width: 320px;
+            height: 192px;
+        }
+
+        iframe{
+            display: block;
+            margin: 0px auto;
+            width: 320px;
+            height: 192px;
+        }
+
+        .formulario{
+            form{
+                fieldset{
+                    legend{
+                        font-size: 15px;
+                    }
+
+                    div{
+                        label{
+                            font-size: 10px;
+                        }
+
+                        .pais{
+                            font-size: 10px;
+                        }
+                    
+                        input{
+                            font-size: 10px;
+                        }
+
+                        p{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        margin-top: 80px;
+    }
+}
+
+/* para mobile */
+@media screen and (max-width: 768px){
+    header{
+        .nombreSitio{
+            margin-left: 0;
+            padding-bottom: 10px;
+
+            a{
+                font-size: 40px;
+            }
+        }
+
+        .navbar-custom{
+            .elementos{
+                .navbar-toggler{
+                    margin-bottom: 0px;
+                    transform: scale(0.8);
+
+                    .navbar-toggler-icon{
+                        transform: scale(0.8);
+                    }
+                }
+
+                .collapse.navbar-collapse{
+                    .menu{
+                        display: flex;
+                        flex-direction: column;
+
+                        >li{
+                            >a{
+                                font-size: 10px;
+                                text-align: center;
+                            }
+                        }
+
+                        li{
+                            .subMenu{
+                                li{
+                                    a{
+                                        font-size: 10px;  
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        padding-top: 80px;
+
+        .titulo{
+            font-size: 25px;
+        }
+
+        .marcas{
+            .row{
+                a{
+                    font-size: 12px;
+                    padding-top: 30px;
+                }
+            }
+        }
+
+        img{
+            margin: 20px auto;
+            width: 200px;
+            height: 120px;
+        }
+
+        h2{
+            font-size: 20px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        .presentacion{
+            margin-top: 100px;
+        }
+
+        iframe{
+            width: 250px;
+            height: 150px;
+        }
+
+        .redes{
+            a{
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+
+        .textoNosotros{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .direccion{
+            font-size: 15px;
+        }
+    }
+
+    .formulario{
+        form{
+            fieldset{
+                .final{
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

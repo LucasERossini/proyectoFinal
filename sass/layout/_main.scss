@@ -1,0 +1,32 @@
+main{
+    width: auto;
+    grid-area: main;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    .titulo{
+        color: rgb(28, 58, 194);
+        text-align: center;
+        font-size: 45px;
+        margin: 20px;
+        font-family:$fuente-principal;
+    }   
+
+    h2{
+        text-align: center;
+        font-size: 35px;
+        margin-top: 100px;
+        margin-bottom: 30px;
+        color: rgb(54, 54, 214);
+        font-family:$fuente-principal;
+    }   
+
+    img{
+        display: block;
+        margin: 20px auto;
+        width: 400px;
+        height: 240px;
+    }
+}

@@ -23,7 +23,7 @@ header{
             margin-bottom: 20px;
             font-size: 65px;
             color: rgb(44, 72, 200);
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: $fuente-principal;
             font-weight: bold;
         }
     }
@@ -70,7 +70,7 @@ header{
                                     font-weight: bold;
                                     font-size: 18px;
                                     text-decoration: none;
-                                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                                    font-family: $fuente-principal;
                                 }
 
                                 &:hover{
@@ -102,7 +102,7 @@ header{
                             font-weight: bold;
                             text-decoration: none;
                             text-transform: uppercase;
-                            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            font-family: $fuente-principal;
                             border-radius: 7px;
                         }
 
@@ -112,109 +112,6 @@ header{
                         transition: 0.3s;
                         }
                     }
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-/* media queries */
-
-/* para tablet */
-@media screen and (max-width: 992px){
-    header{
-        .nombreSitio{
-            margin-right: 0px;
-
-            a{
-                font-size: 50px;
-            }
-        }
-
-        .navbar-custom{
-            .elementos{
-                .collapse.navbar-collapse{
-                    .menu{
-                        display: flex;
-                        flex-direction: column;
-                        padding-top: 5px;
-                        padding-bottom: 5px;
-
-                        >li{
-                            >a{
-                                font-size: 10px;
-                                text-align: center;
-                                padding: 5px;
-                                margin: 5px;
-                            }
-                        }
-
-                        li{
-                            .subMenu{
-                                position: relative;
-                                display: flex;
-                                flex-direction: column;
-                            }
-                        
-                            li{
-                                a{
-                                    font-size: 12px;  
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-/* para mobile */
-@media screen and (max-width: 768px){
-    header{
-        .nombreSitio{
-            margin-left: 0;
-            padding-bottom: 10px;
-
-            a{
-                font-size: 40px;
-            }
-        }
-
-        .navbar-custom{
-            .elementos{
-                .navbar-toggler{
-                    margin-bottom: 0px;
-                    transform: scale(0.8);
-
-                    .navbar-toggler-icon{
-                        transform: scale(0.8);
-                    }
-                }
-
-                .collapse.navbar-collapse{
-                    .menu{
-                        display: flex;
-                        flex-direction: column;
-
-                        >li{
-                            >a{
-                                font-size: 10px;
-                                text-align: center;
-                            }
-                        }
-
-                        li{
-                            .subMenu{
-                                li{
-                                    a{
-                                        font-size: 10px;  
-                                    }
-                                }
-                            }
-                        }
                     }
                 }
             }

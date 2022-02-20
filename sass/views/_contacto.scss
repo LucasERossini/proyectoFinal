@@ -1,0 +1,73 @@
+main{
+    .formulario{
+        width: auto;
+        display: flex;
+        justify-content: center;
+
+        form{
+            fieldset{
+                legend{
+                    margin-bottom: 30px;
+                    padding: 5px;
+                    color: $color-texto;
+                    font-size: 20px;
+                    text-align: center;
+                    font-family:$fuente-principal;
+                }
+
+                div{
+                    label{
+                        color: $color-texto;
+                        font-size: 15px;
+                        margin-left: 50px;
+                        margin-right: 15px;
+                        text-align: center;
+                        font-family:$fuente-principal;
+                    }
+
+                    input{
+                        padding: 5px;
+                        background-color: black;
+                        color: $color-texto;
+                        border-radius: 10px;
+                        font-size: 15px;
+                        text-align: center;
+                        font-family:$fuente-principal;
+                    }
+
+                    .completar{
+                        width: 200px;
+                    }
+
+                    .pais{
+                        color: $color-texto;
+                        background-color: black;
+                        border-radius: 10px;
+                        padding: 3px;
+                    }
+
+                    p{
+                        color: $color-texto;
+                        display: inline-block;
+                        padding-right: 10px;
+                        font-size: 15px;
+                        font-family: $fuente-principal;
+                    }
+
+                    textarea{
+                        width: 250px;
+                        height: 150px;
+                        text-align: start;
+                        margin-left: 50px;
+                        padding-left: 15px;
+                    }
+                }
+                
+                .final{
+                    margin-left: 50px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

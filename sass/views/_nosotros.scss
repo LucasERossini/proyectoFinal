@@ -1,0 +1,14 @@
+main{
+    .textoNosotros{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 300px;
+        margin-left: 150px;
+        margin-right: 150px;
+
+        p{
+            padding-bottom: 50px;
+            color: $color-texto;
+        }
+    }
+}

@@ -1,3 +1,11 @@
+* {
+  padding: 0px;
+  margin: 0px; }
+
+/* estilos del body */
+body {
+  background: linear-gradient(0deg, #020024 0%, #012d81 30%, #020024 100%); }
+
 /* Estilos del header */
 header {
   grid-area: header;
@@ -20,7 +28,7 @@ header {
       margin-bottom: 20px;
       font-size: 65px;
       color: #2c48c8;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       font-weight: bold; }
   header .navbar-custom {
     background: linear-gradient(0deg, #020024 0%, #012d81 100%); }
@@ -55,7 +63,7 @@ header {
               font-weight: bold;
               font-size: 18px;
               text-decoration: none;
-              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+              font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
             header .navbar-custom .elementos .collapse.navbar-collapse .menu li .subMenu li:hover a {
               background-color: #2159c2;
               transition: 0.3s; }
@@ -73,11 +81,154 @@ header {
           font-weight: bold;
           text-decoration: none;
           text-transform: uppercase;
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
           border-radius: 7px; }
         header .navbar-custom .elementos .collapse.navbar-collapse .menu > li:hover > a {
           background-color: #012d7e;
           transition: 0.3s; }
+
+main {
+  width: auto;
+  grid-area: main;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+  main .titulo {
+    color: #1c3ac2;
+    text-align: center;
+    font-size: 45px;
+    margin: 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  main h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color: #3636d6;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  main img {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    height: 240px; }
+
+/* Estilos del footer */
+footer {
+  grid-area: footer;
+  color: white;
+  width: 100%;
+  margin-top: 150px;
+  padding-top: 10px;
+  text-align: center;
+  border-top: solid; }
+  footer p {
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 10px; }
+
+/* media queries */
+/* para tablet */
+main .marcas .row a {
+  text-decoration: none;
+  color: #7094e7;
+  font-weight: bold;
+  font-style: italic;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  main .marcas .row a:hover {
+    transform: scale(1.1);
+    transition: 0.2s; }
+
+main .presentacion {
+  margin-top: 150px; }
+
+main iframe {
+  display: block;
+  margin: 0px auto;
+  width: 600px;
+  height: 360px; }
+
+main .redes {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center; }
+  main .redes a img {
+    margin-top: 40px;
+    width: 50px;
+    height: 50px; }
+  main .redes a .facebook {
+    margin-left: 30px; }
+  main .redes a:hover {
+    transform: scale(1.1);
+    transition: 0.2s; }
+
+main .textoNosotros {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 300px;
+  margin-left: 150px;
+  margin-right: 150px; }
+  main .textoNosotros p {
+    padding-bottom: 50px;
+    color: #7094e7; }
+
+main .direccion {
+  color: #7094e7;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+
+main .formulario {
+  width: auto;
+  display: flex;
+  justify-content: center; }
+  main .formulario form fieldset legend {
+    margin-bottom: 30px;
+    padding: 5px;
+    color: #7094e7;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  main .formulario form fieldset div label {
+    color: #7094e7;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-right: 15px;
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  main .formulario form fieldset div input {
+    padding: 5px;
+    background-color: black;
+    color: #7094e7;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  main .formulario form fieldset div .completar {
+    width: 200px; }
+  main .formulario form fieldset div .pais {
+    color: #7094e7;
+    background-color: black;
+    border-radius: 10px;
+    padding: 3px; }
+  main .formulario form fieldset div p {
+    color: #7094e7;
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 15px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  main .formulario form fieldset div textarea {
+    width: 250px;
+    height: 150px;
+    text-align: start;
+    margin-left: 50px;
+    padding-left: 15px; }
+  main .formulario form fieldset .final {
+    margin-left: 50px;
+    margin-bottom: 10px; }
 
 /* media queries */
 /* para tablet */
@@ -101,7 +252,29 @@ header {
       display: flex;
       flex-direction: column; }
     header .navbar-custom .elementos .collapse.navbar-collapse .menu li li a {
-      font-size: 12px; } }
+      font-size: 12px; }
+  main {
+    padding-top: 120px; }
+    main img {
+      width: 320px;
+      height: 192px; }
+    main iframe {
+      display: block;
+      margin: 0px auto;
+      width: 320px;
+      height: 192px; }
+    main .formulario form fieldset legend {
+      font-size: 15px; }
+    main .formulario form fieldset div label {
+      font-size: 10px; }
+    main .formulario form fieldset div .pais {
+      font-size: 10px; }
+    main .formulario form fieldset div input {
+      font-size: 10px; }
+    main .formulario form fieldset div p {
+      font-size: 10px; }
+  footer {
+    margin-top: 80px; } }
 
 /* para mobile */
 @media screen and (max-width: 768px) {
@@ -122,155 +295,7 @@ header {
       font-size: 10px;
       text-align: center; }
     header .navbar-custom .elementos .collapse.navbar-collapse .menu li .subMenu li a {
-      font-size: 10px; } }
-
-/* Estilos del main */
-main {
-  width: auto;
-  grid-area: main;
-  padding-top: 150px;
-  display: flex;
-  flex-direction: column;
-  align-content: center; }
-  main .titulo {
-    color: #1c3ac2;
-    text-align: center;
-    font-size: 45px;
-    margin: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-  main .marcas .row a {
-    text-decoration: none;
-    color: #7094e7;
-    font-weight: bold;
-    font-style: italic;
-    display: block;
-    text-align: center;
-    font-size: 25px;
-    padding-top: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-    main .marcas .row a:hover {
-      transform: scale(1.1);
-      transition: 0.2s; }
-  main h2 {
-    text-align: center;
-    font-size: 35px;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    color: #3636d6;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-  main .presentacion {
-    margin-top: 150px; }
-  main iframe {
-    display: block;
-    margin: 0px auto;
-    width: 600px;
-    height: 360px; }
-  main .redes {
-    margin-top: 100px;
-    display: flex;
-    justify-content: center; }
-    main .redes a img {
-      margin-top: 40px;
-      width: 50px;
-      height: 50px; }
-    main .redes a .facebook {
-      margin-left: 30px; }
-    main .redes a:hover {
-      transform: scale(1.1);
-      transition: 0.2s; }
-  main .textoNosotros {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 300px;
-    margin-left: 150px;
-    margin-right: 150px; }
-    main .textoNosotros p {
-      padding-bottom: 50px;
-      color: #7094e7; }
-  main img {
-    display: block;
-    margin: 20px auto;
-    width: 400px;
-    height: 240px; }
-  main .direccion {
-    color: #7094e7;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-  main .formulario {
-    width: auto;
-    display: flex;
-    justify-content: center; }
-    main .formulario form fieldset legend {
-      margin-bottom: 30px;
-      padding: 5px;
-      color: #7094e7;
-      font-size: 20px;
-      text-align: center;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-    main .formulario form fieldset div label {
-      color: #7094e7;
-      font-size: 15px;
-      margin-left: 50px;
-      margin-right: 15px;
-      text-align: center;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-    main .formulario form fieldset div input {
-      padding: 5px;
-      background-color: black;
-      color: #7094e7;
-      border-radius: 10px;
-      font-size: 15px;
-      text-align: center;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-    main .formulario form fieldset div .completar {
-      width: 200px; }
-    main .formulario form fieldset div .pais {
-      color: #7094e7;
-      background-color: black;
-      border-radius: 10px;
-      padding: 3px; }
-    main .formulario form fieldset div p {
-      color: #7094e7;
-      display: inline-block;
-      padding-right: 10px;
-      font-size: 15px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-    main .formulario form fieldset div textarea {
-      width: 250px;
-      height: 150px;
-      text-align: start;
-      margin-left: 50px;
-      padding-left: 15px; }
-    main .formulario form fieldset .final {
-      margin-left: 50px;
-      margin-bottom: 10px; }
-
-/* media queries */
-/* para tablet */
-@media screen and (max-width: 992px) {
-  main {
-    padding-top: 120px; }
-    main img {
-      width: 320px;
-      height: 192px; }
-    main iframe {
-      display: block;
-      margin: 0px auto;
-      width: 320px;
-      height: 192px; }
-    main .formulario form fieldset legend {
-      font-size: 15px; }
-    main .formulario form fieldset div label {
       font-size: 10px; }
-    main .formulario form fieldset div .pais {
-      font-size: 10px; }
-    main .formulario form fieldset div input {
-      font-size: 10px; }
-    main .formulario form fieldset div p {
-      font-size: 10px; } }
-
-/* para mobile */
-@media screen and (max-width: 768px) {
   main {
     padding-top: 80px; }
     main .titulo {
@@ -302,37 +327,3 @@ main {
   .formulario form fieldset .final {
     margin-left: 10px;
     margin-bottom: 10px; } }
-
-/* Estilos del footer */
-footer {
-  grid-area: footer;
-  color: white;
-  width: 100%;
-  margin-top: 150px;
-  padding-top: 10px;
-  text-align: center;
-  border-top: solid; }
-  footer p {
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 10px; }
-
-/* media queries */
-/* para tablet */
-@media screen and (max-width: 992px) {
-  footer {
-    margin-top: 80px; } }
-
-/* reset */
-* {
-  padding: 0px;
-  margin: 0px; }
-
-/* estilos del body */
-body {
-  background: linear-gradient(0deg, #020024 0%, #012d81 30%, #020024 100%); }
-
-/* grid layout */
-.contenedor {
-  display: grid;
-  grid-template-areas: "header" "main" "footer"; }

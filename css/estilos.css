@@ -2,11 +2,15 @@
   padding: 0px;
   margin: 0px; }
 
-/* estilos del body */
+header .navbar-custom .elementos .collapse.navbar-collapse .menu li .subMenu li a, header .navbar-custom .elementos .collapse.navbar-collapse .menu > li > a {
+  border-radius: 7px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+
 body {
   background: linear-gradient(0deg, #020024 0%, #012d81 30%, #020024 100%); }
 
-/* Estilos del header */
 header {
   grid-area: header;
   position: fixed;
@@ -37,52 +41,44 @@ header {
       header .navbar-custom .elementos .navbar-toggler {
         margin-bottom: 10px; }
       header .navbar-custom .elementos .collapse.navbar-collapse .menu {
-        padding-left: 0;
-        padding-top: 15px;
-        padding-bottom: 5px;
         list-style: none;
         display: flex;
-        justify-content: space-between; }
-        header .navbar-custom .elementos .collapse.navbar-collapse .menu li .subMenu {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding-left: 0;
-          padding-top: 5px;
-          list-style: none;
-          display: none;
-          position: absolute;
-          background-color: #7094e7;
-          border-radius: 10px; }
-          header .navbar-custom .elementos .collapse.navbar-collapse .menu li .subMenu li {
-            margin-bottom: 5px; }
-            header .navbar-custom .elementos .collapse.navbar-collapse .menu li .subMenu li a {
-              border-radius: 10px;
-              padding: 8px 17px;
-              color: #343492;
-              font-weight: bold;
-              font-size: 18px;
-              text-decoration: none;
-              font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
-            header .navbar-custom .elementos .collapse.navbar-collapse .menu li .subMenu li:hover a {
-              background-color: #2159c2;
-              transition: 0.3s; }
+        justify-content: space-between;
+        padding-left: 0;
+        padding-top: 15px;
+        padding-bottom: 5px; }
         header .navbar-custom .elementos .collapse.navbar-collapse .menu li:hover .subMenu {
           display: flex;
           flex-direction: column;
           align-items: center; }
+        header .navbar-custom .elementos .collapse.navbar-collapse .menu li .subMenu {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: absolute;
+          padding-left: 0;
+          padding-top: 5px;
+          background-color: #7094e7;
+          border-radius: 7px;
+          display: none; }
+          header .navbar-custom .elementos .collapse.navbar-collapse .menu li .subMenu li {
+            margin-bottom: 5px; }
+            header .navbar-custom .elementos .collapse.navbar-collapse .menu li .subMenu li a {
+              padding: 9px 17px;
+              color: #343492;
+              font-size: 18px; }
+            header .navbar-custom .elementos .collapse.navbar-collapse .menu li .subMenu li:hover a {
+              background-color: #2159c2;
+              transition: 0.3s; }
         header .navbar-custom .elementos .collapse.navbar-collapse .menu > li > a {
+          padding: 10px;
           color: #4f4fd6;
+          font-size: 15px;
           background-color: black;
           display: block;
-          padding: 10px;
           margin-right: 20px;
-          font-size: 15px;
-          font-weight: bold;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-          border-radius: 7px; }
+          text-transform: uppercase; }
         header .navbar-custom .elementos .collapse.navbar-collapse .menu > li:hover > a {
           background-color: #012d7e;
           transition: 0.3s; }
@@ -113,7 +109,6 @@ main {
     width: 400px;
     height: 240px; }
 
-/* Estilos del footer */
 footer {
   grid-area: footer;
   color: white;
@@ -169,11 +164,9 @@ main .redes {
 main .textoNosotros {
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 300px;
   margin-left: 150px;
   margin-right: 150px; }
   main .textoNosotros p {
-    padding-bottom: 50px;
     color: #7094e7; }
 
 main .direccion {
@@ -263,6 +256,10 @@ main .formulario {
       margin: 0px auto;
       width: 320px;
       height: 192px; }
+    main .textoNosotros {
+      margin-top: 20px; }
+      main .textoNosotros p {
+        font-size: 15px; }
     main .formulario form fieldset legend {
       font-size: 15px; }
     main .formulario form fieldset div label {

@@ -1,16 +1,25 @@
 // Imports //
+
+// Base //
 @import "base/reset";
 
+// Utilities //
 @import "utilities/variables";
+@import "utilities/maps";
+@import "utilities/extends";
+@import "utilities/mixins";
 
+// Layout //
 @import "layout/body";
 @import "layout/header";
 @import "layout/main";
 @import "layout/footer";
 
+// Views //
 @import "views/home";
 @import "views/nosotros";
 @import "views/sucursales";
 @import "views/contacto";
 
+// Components //
 @import "components/mediaqueries";

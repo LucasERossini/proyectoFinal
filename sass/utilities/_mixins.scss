@@ -1,0 +1,5 @@
+@mixin botones($padding, $color, $size) { // mixin para algunas propiedades de botones del nav //
+    padding: $padding;
+    color: $color;
+    font-size: $size;
+}

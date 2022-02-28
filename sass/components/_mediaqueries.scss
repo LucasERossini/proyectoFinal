@@ -34,11 +34,12 @@
                                 position: relative;
                                 display: flex;
                                 flex-direction: column;
-                            }
-                        
-                            li{
-                                a{
-                                    font-size: 12px;  
+                                width: 100%;
+
+                                li{
+                                    a{
+                                        font-size: 12px;  
+                                    }
                                 }
                             }
                         }
@@ -51,11 +52,21 @@
     main{
         padding-top: 120px;
 
-        img{
-            width: 320px;
-            height: 192px;
-        }
+        .marcas{
+            .row{
+                .marca{
+                    width: 320px;
+                    height: 320px;
+                }
 
+                .col{
+                    .mod{
+                        width: 320px;
+                    }
+                }
+            }
+        }
+        
         iframe{
             display: block;
             margin: 0px auto;
@@ -69,6 +80,11 @@
             p{
                 font-size: 15px;
             }
+        }
+
+        .mapa{
+            width: 400px;
+            height: 380px;
         }
 
         .formulario{
@@ -168,13 +184,23 @@
                     font-size: 12px;
                     padding-top: 30px;
                 }
+
+                .marca{
+                    width: 200px;
+                    height: 200px;
+                }
+
+                .col{
+                    .mod{
+                        width: 200px;
+                    }
+                }
             }
         }
 
-        img{
-            margin: 20px auto;
-            width: 200px;
-            height: 120px;
+        .mapa{
+            width: 250px;
+            height: 240px;
         }
 
         h2{

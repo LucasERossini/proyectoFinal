@@ -6,6 +6,7 @@ header{
     top: 0px;
     left: 0px;
     right: 0px;
+    z-index: 100;
     background: $color-header;
 
     .nombreSitio{
@@ -59,6 +60,7 @@ header{
                             flex-direction: map-get($map: $menu, $key: direccion);
                             align-items: map-get($map: $menu, $key: alineacion);
                             position: map-get($map: $menu, $key: posicion);
+                            width: 15.5%;
                             padding-left: map-get($map: $menu, $key: padd-left);
                             padding-top: 5px;
                             background-color: $color-texto;
@@ -70,7 +72,7 @@ header{
 
                                 a{
                                     @extend %botones;
-                                    @include botones(9px 17px, #343492, 18px);
+                                    @include botones(9px 8px, #343492, 18px);
                                 }
 
                                 &:hover{

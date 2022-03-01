@@ -142,8 +142,8 @@ main .marcas .row .marca {
   width: 400px;
   height: 400px; }
 
-main .presentacion {
-  margin-top: 150px; }
+main .video {
+  width: 600px; }
 
 main iframe {
   display: block;
@@ -172,6 +172,9 @@ main .textoNosotros {
   margin-right: 150px; }
   main .textoNosotros p {
     color: #7094e7; }
+
+main .presentacion {
+  margin-top: 100px; }
 
 main .marcas .row .col .mod {
   width: 400px; }
@@ -268,8 +271,8 @@ main .formulario {
     main iframe {
       display: block;
       margin: 0px auto;
-      width: 320px;
-      height: 192px; }
+      width: 400px;
+      height: 240px; }
     main .textoNosotros {
       margin-top: 20px; }
       main .textoNosotros p {
@@ -330,7 +333,7 @@ main .formulario {
       margin-top: 40px;
       margin-bottom: 15px; }
     main .presentacion {
-      margin-top: 100px; }
+      margin-top: 40px; }
     main iframe {
       width: 250px;
       height: 150px; }

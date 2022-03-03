@@ -154,16 +154,22 @@ main iframe {
 main .redes {
   margin-top: 100px;
   display: flex;
-  justify-content: center; }
-  main .redes a img {
-    margin-top: 40px;
-    width: 50px;
-    height: 50px; }
-  main .redes a .facebook {
-    margin-left: 30px; }
-  main .redes a:hover {
-    transform: scale(1.1);
-    transition: 0.2s; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main .redes h3 {
+    color: white; }
+  main .redes .logo {
+    display: flex; }
+    main .redes .logo a img {
+      margin-top: 20px;
+      width: 50px;
+      height: 50px; }
+    main .redes .logo a .facebook {
+      margin-left: 30px; }
+    main .redes .logo a:hover {
+      transform: scale(1.1);
+      transition: 0.2s; }
 
 main .textoNosotros {
   text-align: center;
@@ -337,7 +343,9 @@ main .formulario {
     main iframe {
       width: 250px;
       height: 150px; }
-    main .redes a img {
+    main .redes h3 {
+      font-size: 17px; }
+    main .redes .logo a img {
       width: 30px;
       height: 30px; }
     main .textoNosotros {

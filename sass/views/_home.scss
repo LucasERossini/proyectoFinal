@@ -39,23 +39,33 @@ main{
     .redes{
         margin-top: 100px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
 
-        a{
-            img{
-                margin-top: 40px;
-                width: 50px;
-                height: 50px;
-            }
-
-            .facebook{
-                margin-left: 30px;
-            }
-
-            &:hover{
-            transform: scale(1.1);
-            transition: 0.2s;
-            }
+        h3{
+            color: white;
         }
+
+        .logo{
+            display: flex;
+
+            a{
+                img{
+                    margin-top: 20px;
+                    width: 50px;
+                    height: 50px;
+                }
+    
+                .facebook{
+                    margin-left: 30px;
+                }
+    
+                &:hover{
+                transform: scale(1.1);
+                transition: 0.2s;
+                }
+            }
+        }        
     } 
 }

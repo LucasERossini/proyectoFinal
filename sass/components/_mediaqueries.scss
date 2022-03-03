@@ -219,10 +219,16 @@
         }
 
         .redes{
-            a{
-                img{
-                    width: 30px;
-                    height: 30px;
+            h3{
+                font-size: 17px;
+            }
+
+            .logo{
+                a{
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
                 }
             }
         }
